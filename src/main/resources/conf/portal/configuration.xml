@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+
+    Copyright (C) 2003-2013 eXo Platform SAS.
+
+    This is free software; you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License as
+    published by the Free Software Foundation; either version 3 of
+    the License, or (at your option) any later version.
+
+    This software is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this software; if not, write to the Free
+    Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+    02110-1301 USA, or see the FSF site: http://www.fsf.org.
+
+-->
+<configuration>
+
+  <component>
+    <type>org.exoplatform.social.injector.module.ActivityModule</type>
+  </component>
+  <component>
+    <type>org.exoplatform.social.injector.module.CalendarModule</type>
+  </component>
+  <component>
+    <type>org.exoplatform.social.injector.module.DocumentModule</type>
+  </component>
+  <component>
+    <type>org.exoplatform.social.injector.module.ForumModule</type>
+  </component>
+  <component>
+    <type>org.exoplatform.social.injector.module.SpaceModule</type>
+  </component>
+  <component>
+    <type>org.exoplatform.social.injector.module.UserModule</type>
+  </component>
+  <component>
+    <type>org.exoplatform.social.injector.module.WikiModule</type>
+  </component>
+  <!-- Data Injector -->
+<!--
+  <component>
+    <type>org.exoplatform.community.service.injector.CommunityDataInjector</type>
+  </component>
+-->
+  <!-- Guice Integration -->
+  <!--
+  <component>
+    <key>org.exoplatform.container.guice.ModuleProvider</key>
+    <type>org.exoplatform.community.service.injector.CommunityModuleProvider</type>
+  </component>
+  -->
+  <!-- Weld Integration -->
+  <!--
+  <component>
+    <key>org.exoplatform.container.weld.WeldContainerHelper</key>
+    <type>org.exoplatform.container.weld.BasicWeldContainerHelper</type>
+    <init-params>
+      <values-param>
+        <name>include</name>
+        <value>org.exoplatform.community.service.injector.module.ActivityModule</value>
+        <value>org.exoplatform.community.service.injector.module.CalendarModule</value>
+        <value>org.exoplatform.community.service.injector.module.DocumentModule</value>
+        <value>org.exoplatform.community.service.injector.module.ForumModule</value>
+        <value>org.exoplatform.community.service.injector.module.SpaceModule</value>
+        <value>org.exoplatform.community.service.injector.module.UserModule</value>
+        <value>org.exoplatform.community.service.injector.module.WikiModule</value>
+      </values-param>
+    </init-params>
+  </component>
+  -->
+  <!-- Tribe Data Injection -->
+  <component>
+    <type>org.exoplatform.social.injector.DataInjector</type>
+  </component>
+  <!-- END -->
+</configuration>
+

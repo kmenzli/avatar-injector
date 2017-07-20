@@ -1,0 +1,29 @@
+{
+  "scenarioName": "Tribe_Fake_Data_Level_A",
+  "description": "Données nécessaire à la réalisation du Training Administrateur fonctionnel",
+  "scriptData": "Tribe_Fake_Data_Level_A.zip",
+  "data": {
+    "users":[
+      {
+        "username": "cbouvier",
+        "firstname": "Christian",
+        "lastname": "Bouvier",
+        "password": "gtngtn",
+        "email": "cbouvier@acme.com",
+        "position": "Community Manager",
+        "isadmin": "false",
+        "avatar": "Andrew_Potter.png"
+      }
+    ],
+    "spaces": [
+      {
+        "displayName": "Discussions Générales",
+        "creator": "cbouvier",
+        "avatar": "Marketing.png",
+        "members": [
+          "cbouvier"
+        ]
+      }
+    ]
+  }
+}
